@@ -116,9 +116,28 @@ header .menu {
 
 #servicos {
     flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#servicos h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .list-servicos {
     display: flex;
     justify-content: space-between;
+}
+
+.list-servicos .item-servicos {
+    text-align: center;
+}
+
+.item-servicos a {
+    width: 120px;
+    background-color: #fff;
+    height: 50px;
+    
 }

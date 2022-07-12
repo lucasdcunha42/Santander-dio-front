@@ -64,7 +64,7 @@ header .menu {
     margin-bottom: 10px;
 }
 
-.texto-apresentacao a {
+.btn {
     background-color: darkblue;
     color: #fff;
     text-align: center;
@@ -160,4 +160,49 @@ header .menu {
 .item-servicos img {
     width: 80%;
     margin: auto;
+}
+
+#planos {
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.list-plano {
+    display: flex;
+    align-items: flex-end;
+}
+
+.item-plano {
+    flex: 1;
+    border:  2px solid darkblue;
+    margin-right: 20px;
+}
+
+.item-plano .btn {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.item-plano h3 {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.item-plano h3::after {
+    content: "";
+    background-color: darkblue;
+    width: 90%;
+    height: 3px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.item-plano ul {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
 }

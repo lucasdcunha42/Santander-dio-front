@@ -58,6 +58,7 @@ header .menu {
 .apresentacao .texto-apresentacao {
     max-width: 300px;
 }
+
 .texto-apresentacao h1 {
     color:  darkblue;
     font-size: 40px;
@@ -188,6 +189,7 @@ header .menu {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 20px;
 }
 
 .item-plano h3::after {
@@ -205,4 +207,18 @@ header .menu {
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
+}
+
+.item-plano ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.item-plano ul li::before { 
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: darkblue;
+
+
 }

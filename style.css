@@ -56,7 +56,8 @@ header .menu {
 }
 
 .apresentacao .texto-apresentacao {
-    max-width: 300px;
+    min-height: 200px;
+    width: 100%;
 }
 
 .texto-apresentacao h1 {
@@ -166,17 +167,25 @@ header .menu {
 #planos {
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 50px;
+}
+
+#planos h2 {
+    font-size: 32px;
+
 }
 
 .list-plano {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
 .item-plano {
     flex: 1;
     border:  2px solid darkblue;
     margin-right: 20px;
+    max-width: 240px;
 }
 
 .item-plano .btn {
@@ -200,13 +209,13 @@ header .menu {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 10px;
-    
 }
 
 .item-plano ul {
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .item-plano ul li {
@@ -216,9 +225,29 @@ header .menu {
 }
 .item-plano ul li::before { 
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     background-color: darkblue;
+    margin-right: 10px;
+    align-items: baseline;
+}
 
+footer {
+    background-color: darkblue;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
 
+footer .footer {
+    justify-content: space-between;
+    color: #fff;
+}
+
+/* mobile */
+
+@media(max-width: 992px){
+    .flex-container {
+        flex-direction: column;
+    }
 }
